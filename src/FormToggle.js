@@ -25,10 +25,6 @@ class FormToggle extends Component {
     return parseFloat(number).toFixed(8);
   }
 
-  calculateOutputValue(quantity, price, actualPrice) {
-    return (quantity * price * actualPrice) / 1e8;
-  }
-
   render() {
     let content;
     if (this.state.currentForm === "buy") {
@@ -41,7 +37,6 @@ class FormToggle extends Component {
           linkEthPrice={this.state.linkEthPrice}
           priceFeedRefreshing={this.state.priceFeedRefreshing}
           convertToFloat={this.convertToFloat}
-          calculateOutputValue={this.calculateOutputValue}
           linkBalanceLoading={this.state.linkBalanceLoading}
           ethBalanceLoading={this.state.ethBalanceLoading}
         />
@@ -56,7 +51,6 @@ class FormToggle extends Component {
           linkEthPrice={this.state.linkEthPrice}
           priceFeedRefreshing={this.state.priceFeedRefreshing}
           convertToFloat={this.convertToFloat}
-          calculateOutputValue={this.calculateOutputValue}
           linkBalanceLoading={this.state.linkBalanceLoading}
           ethBalanceLoading={this.state.ethBalanceLoading}
         />

@@ -30,9 +30,9 @@ I used Remix to build the order book contract. I deployed to a local Ganache cha
 
 ## Addresses
 
-priceFeedAddress: "0x4d38a35C2D87976F334c2d2379b535F1D461D9B4"
-chainlinkTokenAddress: "0x01BE23585060835E02B77ef475b0Cc51aA1e0709"
-orderBookContractAddress: "0x7383deA1f066F424Fb3A989e4277Ade74F9d9ad1" (Rinkeby)
+- priceFeedAddress: "0x4d38a35C2D87976F334c2d2379b535F1D461D9B4"
+- chainlinkTokenAddress: "0x01BE23585060835E02B77ef475b0Cc51aA1e0709"
+- orderBookContractAddress: "0x7383deA1f066F424Fb3A989e4277Ade74F9d9ad1" (Rinkeby)
 
 ## Developer Docs
 

@@ -21,7 +21,6 @@ class BuyForm extends Component {
       convertToFloat: props.convertToFloat,
       ethBalanceLoading: props.ethBalanceLoading,
       linkBalanceLoading: props.linkBalanceLoading,
-      calculateOutputValue: props.calculateOutputValue,
     };
   }
 

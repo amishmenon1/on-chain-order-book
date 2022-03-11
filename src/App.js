@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Panel from "react-bootstrap/lib/Panel";
 import "react-toastify/dist/ReactToastify.css";
 import logo from "./order-book-logo.png";
 import "./App.css";
@@ -41,7 +42,6 @@ class App extends Component {
       ethPrice: 0,
       ethPriceLoading: false,
       linkEthRefreshRate: 15000,
-      // orderBookContractAddress: "0xfB08E370EcBD3d4f9E909caD14bCA4659E540FA7", //ganache
       orderBookContractAddress: "0x7383deA1f066F424Fb3A989e4277Ade74F9d9ad1", //rinkeby
       orderBookContract: "",
       orderBookIndex: {
@@ -440,17 +440,6 @@ class App extends Component {
     return sorted;
   }
 
-  printFlagValues() {
-    console.log("askTransactionComplete: " + this.state.askTransactionComplete);
-    console.log("askTransactionPending: " + this.state.askTransactionPending);
-    console.log("asksLoading: " + this.state.asksLoading);
-    console.log("bidTransactionComplete: " + this.state.bidTransactionComplete);
-    console.log("bidTransactionPending: " + this.state.bidTransactionPending);
-    console.log("bidsLoading: " + this.state.bidsLoading);
-    console.log("ethBalanceLoading: " + this.state.ethBalanceLoading);
-    console.log("linkBalanceLoading: " + this.state.linkBalanceLoading);
-  }
-
   render() {
     let loadingContent = (
       <a id="loader" className="text-center">
@@ -481,7 +470,7 @@ class App extends Component {
         />
       );
     }
-    // this.printFlagValues();
+
     let orderBookPanelContent;
     if (
       this.state.priceFeedInitialLoad ||
@@ -498,11 +487,27 @@ class App extends Component {
         />
       );
     }
+    var disclaimer = (
+      <Panel bsStyle="info" className="centeralign">
+        <Panel.Heading>
+          <Panel.Title componentClass="h3">Disclaimer</Panel.Title>
+        </Panel.Heading>
+        <Panel.Body>
+          <p>
+            In order for this app to load successfully, you must have a Metamask
+            account that is connected to the Rinkeby testnet (Ethereum). You
+            must also have test ETH in your account to be able to place your
+            order.
+          </p>
+        </Panel.Body>
+      </Panel>
+    );
 
     return (
       <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <header className="App-header">
+            <h1 className="App-title">DApp Challenge!</h1>
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">ERC20 Order Book</h1>
           </header>
@@ -514,6 +519,9 @@ class App extends Component {
             <Col md={1} />
             <Col md={4}>{orderBookPanelContent}</Col>
             <Col md={1} />
+          </Row>
+          <Row className="disclaimer">
+            <Col md={12}>{disclaimer}</Col>
           </Row>
         </div>
       </Router>
