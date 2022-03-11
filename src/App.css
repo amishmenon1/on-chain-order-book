@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 80px;
+}
+
+.App-header {
+  /* background-color: #222; */
+  background-color: darkgray;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.order-book {
+  /* padding-top: 10em; */
+  overflow-y: scroll;
+  max-height: 100em;
+  display: inline-block;
+  width: 35vw;
+}
+
+.dex-window {
+  border-style: outset;
+}
+
+.orders-list {
+  border-style: inset;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

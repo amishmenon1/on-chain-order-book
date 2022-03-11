@@ -1,0 +1,16 @@
+.order-display {
+  display: block;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+.text-muted {
+  font-weight: bolder;
+}

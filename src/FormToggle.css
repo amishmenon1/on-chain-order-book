@@ -1,0 +1,20 @@
+.dex-main {
+  /* background-color: #343a40;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important; */
+}
+
+.action-toolbar {
+  /* padding-top: 1rem; */
+}
+
+.button-selected {
+  border: 2px solid rgb(0, 0, 255);
+}
+
+.form-toggle-buttons {
+  padding-top: 10px;
+}
+
+.order-input {
+  width: 50%;
+}

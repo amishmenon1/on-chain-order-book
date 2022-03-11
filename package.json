@@ -1,0 +1,40 @@
+{
+  "name": "on-chain-order-book",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://amishmenon1.github.io/on-chain-order-book",
+  "dependencies": {
+    "@lab49/react-order-book": "^0.1.1",
+    "@truffle/hdwallet-provider": "^2.0.3",
+    "axios": "^0.18.0",
+    "dotenv": "^16.0.0",
+    "ganache-cli": "^6.12.2",
+    "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.0.3",
+    "react-toastify": "4.1",
+    "truffle": "^5.0.0",
+    "truffle-hdwallet-provider": "^1.0.0-web3one.5",
+    "uuid": "^8.3.2",
+    "web3": "^1.0.0-beta.55"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
