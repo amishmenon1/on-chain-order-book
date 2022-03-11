@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/on-chain-order-book/precache-manifest.0287b85a2ab0c21c696fd3038eeab648.js"
+  "/on-chain-order-book/precache-manifest.6bafa9e0f916bde801be5b56477a0070.js"
 );
 
 workbox.clientsClaim();
