@@ -34,6 +34,25 @@ I used Remix to build the order book contract. I deployed to a local Ganache cha
 - chainlinkTokenAddress: "0x01BE23585060835E02B77ef475b0Cc51aA1e0709"
 - orderBookContractAddress: "0x7383deA1f066F424Fb3A989e4277Ade74F9d9ad1" (Rinkeby)
 
+## Cloning and Running the UI Locally
+
+Clone the project into local
+
+Install all the npm packages. Go into the project folder and type the following command to install all npm packages
+
+```
+npm install
+```
+
+In order to run the application, type the following commands
+
+```
+cd order-book
+npm start
+```
+
+The Application Runs on **localhost:3000**
+
 ## Developer Docs
 
 ### Prerequisites
@@ -54,32 +73,7 @@ I used Remix to build the order book contract. I deployed to a local Ganache cha
 8. Install Metamask and configure connection to Rinkeby testnet
    - You will also need to fund the wallet with test ETH from a Rinkeby faucet
 
-### Install create-react-app
-
-Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
-
 ```
-npm install -g create-react-app
-```
-
-## Cloning and Running the UI Locally
-
-Clone the project into local
-
-Install all the npm packages. Go into the project folder and type the following command to install all npm packages
-
-```
-npm install
-```
-
-In order to run the application, type the following commands
-
-```
-cd order-book
-npm start
-```
-
-The Application Runs on **localhost:3000**
 
 ## Resources
 
@@ -87,3 +81,4 @@ The Application Runs on **localhost:3000**
 https://github.com/facebook/create-react-app
 
 **React Bootstrap** : https://react-bootstrap.github.io/getting-started/introduction/
+```
